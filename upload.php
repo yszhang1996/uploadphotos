@@ -35,6 +35,5 @@ else
                     location.href="index.html"
                     </script>';
         exit;  
-
     }
 }
