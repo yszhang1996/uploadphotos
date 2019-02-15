@@ -15,13 +15,25 @@
 </head>
 <body>
 <div>
-<img src="images/1.jpg">	
+<img src="images/1.jpg" id="img">	
 </div>
 <div>
-	<form class="container" enctype="multipart/form-data" method="post" id='formBox' name="form"> 
-            <input type="file" id="chooseImage" name="file"><br><br>
-            <input type="submit" value="提交">
+	<form class="container" enctype="multipart/form-data" method="post" id='formBox' name="form" action="upload.php"> 
+            <input type="file" id="chooseImage" name="file" required="required"><br><br>
+            <input type="submit" value="上传">
     </form>
+    <img src="images/8.gif">
 </div>
 </body>
+<script type="text/javascript">
+	var test="";
+	test=Math.floor(Math.random()*7)+1;
+/*	document.write(test);*/
+	var t1= new String;
+	t1=test;
+/*	document.write(t1);*/
+	var img="images/"+t1+".jpg";
+/*	document.write(img);*/
+	document.getElementById("img").src=img;
+</script>
 </html>
